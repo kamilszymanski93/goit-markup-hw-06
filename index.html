@@ -403,52 +403,54 @@
 
     <div class="modal is-hidden" data-modal>
       <div class="modal-box">
-        <button data-modal-close>
+        <button class="modal-close-button" data-modal-close>
           <svg width="12" height="12">
             <use href="images/icons.svg#icon-close-button"></use>
           </svg>
         </button>
+        <h3 class="modal-title">Zostaw swoje dane w formularzu poniżej</h3>
 
-        <div class="modal-form">
-          <form>
-            <label>
-              Imię
-              <input
-                class="modal-form-item"
-                type="name"
-                name="user-name"
-                placeholder="Jurek Ogórek"
-              />
-            </label>
-            <label>
-              Telefon
-              <input
-                class="modal-form-item"
-                type="number"
-                name="phone-number"
-                placeholder="+111111111"
-              />
-            </label>
-            <label>
-              Email
-              <input
-                class="modal-form-item"
-                type="email"
-                name="email"
-                placeholder="example@mail.com"
-              />
-            </label>
-            <label>
-              Komentarz
-              <textarea
-                class="modal-form-item"
-                name="feedback"
-                rows="5"
-                placeholder="Wprowadź tekst"
-              ></textarea></label
-            ><button type="submit">Wyślij</button>
-          </form>
-        </div>
+        <form class="modal-form">
+          <label>
+            Imię
+            <input
+              class="modal-form-item"
+              type="name"
+              name="user-name"
+              placeholder="Jurek Ogórek"
+            />
+          </label>
+          <label>
+            Telefon
+            <input
+              class="modal-form-item"
+              type="number"
+              name="phone-number"
+              placeholder="+111111111"
+            />
+          </label>
+          <label>
+            Email
+            <input
+              class="modal-form-item"
+              type="email"
+              name="email"
+              placeholder="example@mail.com"
+            />
+          </label>
+          <label>
+            Komentarz
+            <textarea
+              class="modal-form-comment"
+              name="feedback"
+              rows="5"
+              placeholder="Wprowadź tekst"
+            ></textarea></label
+          >
+          <input class="modal-checkbox" type="checkbox" name="rules" value="rules" checked />
+    Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
+  </label><button type="submit">Wyślij</button>
+        </form>
       </div>
     </div>
 
