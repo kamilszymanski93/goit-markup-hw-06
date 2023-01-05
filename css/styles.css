@@ -641,3 +641,49 @@ body {
 .modal.is-hidden .modal-box {
   transform: translate(-50%, -50%) scale(0.1) rotate(180deg) skew(180deg);
 }
+.form-box {
+  display: block;
+  padding-top: 12px;
+  margin-left: 70px;
+  position: relative;
+}
+.form-box h3 {
+  position: relative;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+  text-align: left;
+}
+.form-box input {
+  border-style: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: #2f303a;
+  margin-top: 20px;
+  padding-left: 16px;
+  position: relative;
+  width: 358px;
+  height: 50px;
+}
+.footer-form-button {
+  width: 200px;
+  height: 50px;
+  background-color: #2196f3;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-style: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.modal-form label {
+  display: block;
+}
+.modal-form-item {
+  display: block;
+}
