@@ -385,11 +385,10 @@
           </ul>
         </div>
         <div class="form-box">
-          <form>
-            <label>
-              <h3>Zapisz się do newslettera</h3>
-              <input type="email" name="email" placeholder="example@mail.com" />
-            </label>
+          <h3>Zapisz się do newslettera</h3>
+          <form style="display: flex; align-items: center">
+            <input type="email" name="email" placeholder="example@mail.com" />
+
             <button type="submit" class="footer-form-button">
               Zapisz się
               <svg width="24" height="24">
@@ -411,32 +410,38 @@
         <h3 class="modal-title">Zostaw swoje dane w formularzu poniżej</h3>
 
         <form class="modal-form">
-          <label>
+          <label class="modal-form-label">
             Imię
             <input
               class="modal-form-item"
               type="name"
               name="user-name"
-              placeholder="Jurek Ogórek"
-            />
+              placeholder=""
+            /><svg width="12" height="12" class="modal-form-svg">
+              <use href="images/icons.svg#icon-person"></use>
+            </svg>
           </label>
-          <label>
+          <label class="modal-form-label">
             Telefon
             <input
               class="modal-form-item"
-              type="number"
+              type="text"
               name="phone-number"
-              placeholder="+111111111"
-            />
+              placeholder=""
+            /><svg width="13" height="13" class="modal-form-svg">
+              <use href="images/icons.svg#icon-phone"></use>
+            </svg>
           </label>
-          <label>
+          <label class="modal-form-label">
             Email
             <input
               class="modal-form-item"
               type="email"
               name="email"
-              placeholder="jurekogorek@siurek.com"
-            />
+              placeholder=""
+            /><svg width="15" height="12" class="modal-form-svg">
+              <use href="images/icons.svg#icon-letter"></use>
+            </svg>
           </label>
           <label>
             Komentarz
@@ -455,12 +460,13 @@
               value="rules"
               checked
             />
-
-            Oświadczam iż akceptuję <a href="#"> Regulamin</a> i
-            <a href="#"> Politykę Prywatności.</a>
+            Oświadczam iż akceptuję
+            <a href="#">Regulamin</a>
+            i
+            <a href="#">Politykę Prywatności.</a>
           </label>
-          <button type="submit">Wyślij</button>
         </form>
+        <button class="modal-form-button" type="submit">Wyślij</button>
       </div>
     </div>
 
