@@ -803,7 +803,11 @@ body {
 }
 .modal-checkbox:checked + .custom-checkbox > .custom-checkbox-svg {
   opacity: 1;
+  background-color: #2196f3;
+  border-radius: 2px;
+  fill: #fff;
 }
+
 .modal-form a {
   color: #2196f3;
 }
